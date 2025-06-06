@@ -1,7 +1,7 @@
-require "haikunator/version"
+require "tagalog_haikunator/version"
 require "securerandom"
 
-module Haikunator
+module TagalogHaikunator
   class << self
     def haikunate(token_range = 9999, delimiter = "-")
       build(token_range, delimiter)
@@ -27,17 +27,9 @@ module Haikunator
       SecureRandom.random_number(range) if range > 0
     end
 
+
     def adjectives
-      %w(
-        autumn hidden bitter misty silent empty dry dark summer
-        icy delicate quiet white cool spring winter patient
-        twilight dawn crimson wispy weathered blue billowing
-        broken cold damp falling frosty green long late lingering
-        bold little morning muddy old red rough still small
-        sparkling thrumming shy wandering withered wild black
-        young holy solitary fragrant aged snowy proud floral
-        restless divine polished ancient purple lively nameless
-      )
+      %w(magandang mapagkumbabang mapanlikhang masayang payapang mahiwagang mabangong makapangyarihang masidhing magulong maamong marangyang mapanlikhang makataong masiglang)
     end
 
     def nouns
